@@ -17,10 +17,16 @@ Y la salida del wrapperCron sería algo como:
 
 # Uso del wrapper en cron:
 >*/5 * * * * (Indicar marco horario de ejecución)
+
 >/usr/bin/nice (Tener en cuenta nice, para usarlo con los valores por defecto)
+
 >/usr/bin/python (path donde encontrar el ejecutable python)
+
 >/home/user/wrapperCron.py (path absoluto donde encontrar el fichero que queremos ejecutar)
+
 >-lphp (-l es un argumento del script a ejecutar que indica el lenguaje del script embebido que tenemos que ejecutar)
+
 >-p/home/user/myScripts/script.php (-p es un argumento para indicar el paht absoluto de nuestro script embebido)
+
 >-a (si lo hubiera es otro argumento que indicaría los parámetros que necesita nuestro script embebido para su ejecución)
 
